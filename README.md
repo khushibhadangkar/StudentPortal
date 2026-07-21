@@ -1,224 +1,263 @@
-# 🎓 EduSync
-
 <div align="center">
 
-### Modern Student Learning & Academic Management Platform
+# EduSync LMS
 
-A production-ready student portal built with **Next.js 15**, designed to centralize learning, assessments, collaboration, and student engagement in a single intuitive experience.
+### Modern Learning Management System
+
+**Software Engineering Internship Project**  
+**Ailexity Technology Pvt. Ltd.**
+
+A modern Learning Management System (LMS) built with **Next.js**, **React**, and **TypeScript**, designed to deliver an intuitive, responsive, and scalable educational platform.
+
+---
+
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-38BDF8?logo=tailwindcss)
+![Zustand](https://img.shields.io/badge/Zustand-State%20Management-orange)
+![Framer Motion](https://img.shields.io/badge/Framer-Motion-purple)
 
 </div>
 
 ---
 
-## ✨ Overview
+# About
 
-EduSync is a comprehensive student experience platform that streamlines academic workflows through an integrated ecosystem of learning tools, assessments, discussions, course management, and AI-powered assistance.
+EduSync is a modern Learning Management System (LMS) developed during my Software Engineering Internship at **Ailexity Technology Pvt. Ltd.**
 
-Originally migrated from a legacy HTML application, EduSync was rebuilt using a modern component-driven architecture to improve scalability, maintainability, accessibility, and performance.
-
----
-
-## 🚀 Key Features
-
-### 📊 Student Dashboard
-
-* Personalized student overview
-* Upcoming deadlines and events
-* Academic progress tracking
-* Quick-access widgets
-
-### 📚 Course Management
-
-* Course enrollment system
-* Progress monitoring
-* Course bookmarking
-* Instructor communication
-
-### 📝 Assignments
-
-* Assignment tracking
-* File submission workflows
-* Status monitoring
-* Submission management
-
-### 🧠 Assessment Engine
-
-* Interactive MCQ testing
-* Real-time countdown timers
-* Automatic scoring
-* Performance reports
-
-### 🎥 Learning Resources
-
-* Video lecture integration
-* Search and filtering
-* Embedded educational content
-
-### 💬 Discussion Hub
-
-* Community discussions
-* Thread creation
-* Replies and engagement
-* Content management
-
-### 👤 Student Profiles
-
-* Editable profile information
-* Avatar management
-* Personalized settings
-
-### ⚙️ Personalization
-
-* Dark & Light themes
-* Multiple accent color systems
-* Notification preferences
-* Persistent user settings
-
-### 🤖 AI Assistant
-
-* Integrated academic support chatbot
-* Contextual student assistance
-* Quick academic guidance
+The project focuses on creating a clean, scalable, and responsive user interface while following modern React development practices. The application is built using the Next.js App Router architecture and emphasizes modular component design, reusable UI elements, and maintainable project organization.
 
 ---
 
-## 🏗️ Architecture
+# My Contributions
+
+During my internship, I contributed to the frontend development of EduSync by:
+
+- Developing responsive user interfaces using React and Next.js
+- Building reusable and modular UI components
+- Implementing responsive layouts across different screen sizes
+- Structuring application pages using the Next.js App Router
+- Improving component organization and maintainability
+- Integrating animations for smoother user interactions
+- Managing application state using Zustand
+- Following clean code practices and component-based architecture
+
+---
+
+# Features
+
+- Responsive LMS interface
+- Modern dashboard design
+- Student-focused UI
+- Course navigation
+- Modular component architecture
+- Smooth page transitions
+- Responsive layouts
+- Reusable UI system
+- Optimized routing using Next.js
+- State management with Zustand
+
+---
+
+# Tech Stack
+
+| Category | Technology |
+|-----------|------------|
+| Framework | Next.js 15 |
+| Library | React 19 |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+| State Management | Zustand |
+| Package Manager | npm |
+| Linting | ESLint |
+
+---
+
+# Project Architecture
+
+```text
+                    User
+                     │
+                     ▼
+              Next.js Application
+                     │
+      ┌──────────────┼──────────────┐
+      │              │              │
+      ▼              ▼              ▼
+   App Router     Components      State
+                                  (Zustand)
+      │              │              │
+      └──────────────┼──────────────┘
+                     │
+                     ▼
+              Responsive UI
+```
+
+---
+
+# Folder Structure
 
 ```text
 edusync/
+│
 ├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
 ├── components/
+│   ├── ui/
+│   └── ...
+│
 ├── lib/
+│
 ├── types/
+│
 ├── public/
-└── services/
+│
+├── package.json
+├── tailwind.config.ts
+├── next.config.ts
+└── tsconfig.json
 ```
 
-### Design Principles
+---
 
-* Component-Driven Development
-* Scalable Architecture
-* Accessibility First
-* Mobile Responsive
-* Performance Optimized
-* Type Safety with TypeScript
+# Application Flow
+
+```mermaid
+flowchart LR
+
+A[User] --> B[Next.js App]
+
+B --> C[App Router]
+
+C --> D[Pages]
+
+D --> E[Reusable Components]
+
+E --> F[State Management]
+
+F --> G[Responsive UI]
+```
 
 ---
 
-## 🛠 Tech Stack
+# Engineering Principles
 
-| Category         | Technologies                  |
-| ---------------- | ----------------------------- |
-| Frontend         | Next.js 15, React, TypeScript |
-| Styling          | Tailwind CSS                  |
-| State Management | Zustand                       |
-| Animation        | Framer Motion                 |
-| Icons            | Font Awesome                  |
-| Storage          | Local Storage Persistence     |
----
+The project follows several modern frontend engineering practices:
 
-## 📱 Responsive Experience
-
-EduSync is optimized for:
-
-* Mobile Devices
-* Tablets
-* Laptops
-* Desktop Systems
-* Large Displays
+- Component-based architecture
+- Separation of concerns
+- Reusable UI components
+- Type-safe development using TypeScript
+- Responsive-first design
+- Centralized state management
+- Clean project organization
+- Maintainable codebase
+- Scalable folder structure
 
 ---
 
-## ⚡ Performance Highlights
+# Installation
 
-* Server-side rendering with Next.js
-* Component-based architecture
-* Optimized rendering patterns
-* Persistent client state
-* Efficient asset loading
-* Modern React best practices
-
----
-
-## 🔐 Core Functionalities
-
-✅ Course Enrollment
-
-✅ Assignment Submission
-
-✅ MCQ Test Engine
-
-✅ Grade Tracking
-
-✅ Discussion Forums
-
-✅ Video Learning Platform
-
-✅ AI Student Assistant
-
-✅ Theme Customization
-
-✅ Instructor Messaging
-
-✅ Persistent User Preferences
-
----
-
-## 🚀 Getting Started
-
-### Installation
+## Clone Repository
 
 ```bash
-git clone https://github.com/khushibhadangkar/StudentPortal.git
+git clone https://github.com/yourusername/edusync.git
+```
 
-cd StudentPortal
+## Navigate into the project
 
+```bash
+cd edusync
+```
+
+## Install dependencies
+
+```bash
 npm install
 ```
 
-### Development
+## Start development server
 
 ```bash
 npm run dev
 ```
 
-Open:
+Visit:
 
-```text
+```
 http://localhost:3000
 ```
 
-### Production Build
+---
 
-```bash
-npm run build
-npm start
+# Project Structure
+
+```text
+Frontend
+│
+├── Next.js 15
+├── React 19
+├── TypeScript
+├── Tailwind CSS
+├── Zustand
+└── Framer Motion
 ```
 
 ---
 
-## 🎯 Project Goals
+# Development Highlights
 
-* Modernize legacy educational systems
-* Improve student engagement
-* Simplify academic workflows
-* Enhance learning accessibility
-* Deliver a scalable educational platform
+✔ Modern React Architecture
+
+✔ Next.js App Router
+
+✔ TypeScript
+
+✔ Responsive Design
+
+✔ Reusable Components
+
+✔ State Management
+
+✔ Scalable Folder Structure
+
+✔ Clean Code Practices
+
+✔ Frontend Performance Optimization
+
+✔ Maintainable Codebase
 
 ---
 
-## 📄 License
+# Learning Outcomes
 
-This project is developed for educational, learning, and portfolio purposes.
+During this internship I strengthened my understanding of:
+
+- Modern React development
+- Next.js App Router architecture
+- Component-driven UI development
+- State management patterns
+- Responsive web design
+- TypeScript best practices
+- Project organization for production applications
+- Collaborative software development workflows
+- Version control using Git
 
 ---
 
-<div align="center">
+# Acknowledgements
 
-Built  using Next.js, TypeScript & Modern Web Technologies
+This project was developed as part of my **Software Engineering Internship at Ailexity Technology Pvt. Ltd.** The internship provided valuable exposure to modern frontend development practices, collaborative workflows, and scalable application architecture.
 
-</div>
+---
 
+# License
 
-
+This repository is shared for portfolio and educational purposes.
 
