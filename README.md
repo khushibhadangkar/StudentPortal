@@ -170,30 +170,6 @@ The project follows several modern frontend engineering practices:
 git clone https://github.com/yourusername/edusync.git
 ```
 
-## Navigate into the project
-
-```bash
-cd edusync
-```
-
-## Install dependencies
-
-```bash
-npm install
-```
-
-## Start development server
-
-```bash
-npm run dev
-```
-
-Visit:
-
-```
-http://localhost:3000
-```
-
 ---
 
 # Project Structure
